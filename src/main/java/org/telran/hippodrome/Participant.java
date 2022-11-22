@@ -41,7 +41,7 @@ public abstract class Participant implements Runnable {
         }
         finishTime = System.currentTimeMillis();
         result = (int) (finishTime - startTime);
-        System.out.println(result);
+        System.out.println(result + " " + Thread.currentThread().getName());
     }
 
     public void step() {
